@@ -1,0 +1,26 @@
+.waypoint, .overlay-internals {
+    opacity: 1 !important;
+}
+
+.flexslider .slides > li, .team-slider {
+    display: block !important;
+}
+
+.team-carousel, #show-more {
+    display: none !important;
+}
+
+.case-study {
+    display: block !important;
+}
+
+@media only all and (min-width: 48em) {
+    .case-study {
+        display: flex !important;
+    }
+}
+
+.overlay--contact {
+    position: static !important;
+    z-index: 1 !important;
+}
