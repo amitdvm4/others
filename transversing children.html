@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>demonstrating transversing children</title>
+	<script type="text/javascript" src="jquery.js"></script>
+
+</head>
+<body>
+	<ol>
+		<li><div>li 1</div></li>
+		<li><div>li 2</div></li>
+		<li><div>li 3</div></li>
+		<li><div>li 4</div></li>
+		<li><div>li 5</div>
+			<span>hello</span>
+		</li>
+	</ol>
+	<input type="button" value="apply" onclick="apply()">
+	<script type="text/javascript">
+		function apply(){
+			$("ol").find("div").css({
+				padding:"5px",
+				margin:"10px",
+				background:"green"
+			});
+		}
+	</script>
+
+</body>
+</html>
