@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>demonsrating animation method</title>
+	<script type="text/javascript" src="jquery.js"></script>
+	<style type="text/css">
+		.block{
+			border:1px solid;
+			margin:20px;
+			padding:20px;
+			background:green;
+			text-align: center;
+			width: 200px;
+			height:150px;
+			position:absolute;
+		}
+	</style>
+</head>
+<body>
+<input type="button" value="apply" onclick="performance()">
+<div class="block">
+	block
+</div>
+<script type="text/javascript">
+	function performance(type) {
+		$(".block").animate({
+			width:"250px",
+			height:"150px",
+			left:"50px",
+			opacity:0.4
+
+		},2000);
+	}
+</script>
+</body>
+</html> 
