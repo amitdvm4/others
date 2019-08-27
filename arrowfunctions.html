@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+		function add(){
+			console.log('frm add');
+		}
+		add();
+		function sample(){
+			this.a=30;
+			this.b=45;
+			this.showData=()=>{
+				setTimeout(()=>{
+					console.log("value of ais"+this.a);
+					console.log("value of bis"+this.b);
+					
+				},4000);
+			}
+		}
+		var obj=new sample();		
+		obj.showData();
+
+	</script>
+
+</body>
+</html>
